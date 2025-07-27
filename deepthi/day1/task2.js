@@ -1,11 +1,10 @@
-let num = 100;                      //Number
-let str = "123";                    // String
-let bool = false;                   // Boolean
-let notDefined;                     // Undefined
-let obj = { key: "value" };         // Object
-let sym = Symbol("id");             // Symbol
+let num = 100;                      /
+let str = "123";                    
+let bool = false;                   
+let notDefined;                   
+let obj = { key: "value" };         
+let sym = Symbol("id");             
 
-// Display types
 console.log(typeof num);           
 console.log(typeof str);           
 console.log(typeof bool);          
@@ -13,7 +12,7 @@ console.log(typeof notDefined);
 console.log(typeof obj);           
 console.log(typeof sym);           
 
-// Type Conversion
+
 console.log(Number("456"));        
 console.log(String(789));          
 
