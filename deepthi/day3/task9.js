@@ -1,4 +1,3 @@
-// Function that accepts a callback
 function fetchData(callback) {
     console.log("Fetching data...");
     setTimeout(() => {
@@ -11,7 +10,6 @@ function handleData(message) {
 }
 fetchData(handleData);
 
-// Scope demo using var, let, const
 var globalVar = "I'm global";
 
 function checkScope() {
@@ -27,7 +25,7 @@ function checkScope() {
 }
 checkScope();
 
-// Function with callback on task complete
+
 function doTask(task, callback) {
     console.log(Doing (task));
     callback();
