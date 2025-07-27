@@ -1,7 +1,6 @@
 let a = 10;
 let b = 3;
 
-// Arithmetic Operators
 console.log("Arithmetic Operators:");
 console.log("Addition:", a + b);
 console.log("Subtraction:", a - b);
@@ -11,7 +10,6 @@ console.log("Modulus:", a % b);
 console.log("Exponentiation:", a ** b);
 console.log("------------");
 
-// Assignment Operators
 console.log("Assignment Operators:");
 let x = 5;
 x += 2;
@@ -26,7 +24,7 @@ x %= 2;
 console.log("x %= 2:", x);
 console.log("------------");
 
-// Relational (Comparison) Operators
+
 console.log("Relational Operators:");
 console.log("Equal (==):", a == b);
 console.log("Strict Equal (===):", a === b);
@@ -38,20 +36,19 @@ console.log("Greater Than or Equal (>=):", a >= b);
 console.log("Less Than or Equal (<=):", a <= b);
 console.log("------------");
 
-// Logical Operators
+
 console.log("Logical Operators:");
 console.log("AND (&&):", a > 5 && b < 5);
 console.log("OR (||):", a > 10 || b < 5);
 console.log("NOT (!):", !(a < b));
 console.log("------------");
 
-// Conditional (Ternary) Operator
+
 console.log("Conditional (Ternary) Operator:");
 let result = a > b ? "a is greater" : "b is greater or equal";
 console.log("Result:", result);
 console.log("------------");
 
-// Bitwise Operators
 console.log("Bitwise Operators:");
 console.log("AND (&):", a & b);
 console.log("OR (|):", a | b);
@@ -61,7 +58,7 @@ console.log("Left Shift (a << 1):", a << 1);
 console.log("Right Shift (a >> 1):", a >> 1);
 console.log("------------");
 
-// Increment and Decrement Operators
+
 console.log("Increment and Decrement Operators:");
 let y = 7;
 console.log("Initial y:", y);
