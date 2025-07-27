@@ -1,4 +1,4 @@
-let num = 100;                      /
+let num = 100;                      
 let str = "123";                    
 let bool = false;                   
 let notDefined;                   
