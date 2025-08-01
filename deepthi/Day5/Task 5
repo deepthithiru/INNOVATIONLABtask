@@ -1,0 +1,14 @@
+const user = { name: "Anu", age: 20 };
+const { name, age } = user;
+console.log(name, age);
+
+const { course = "CSE" } = user;
+console.log(course);
+
+const data = { student: { id: 1, mark: 95 } };
+const { student: { id, mark } } = data;
+console.log(id, mark);
+
+const copy = { ...user };
+const updated = { ...user, age: 21 };
+console.log(copy, updated);
