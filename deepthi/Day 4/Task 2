@@ -1,0 +1,13 @@
+//Arrays
+    console.log("\n--- Task 2: Arrays ---");
+
+    let fruits = ["apple", "banana", "cherry"];
+    fruits.push("date");
+    fruits.pop();
+    fruits.shift();
+    fruits.unshift("apricot");
+
+    console.log("Fruits array:", fruits);
+    console.log("Length:", fruits.length);
+    fruits[1] = "blueberry";
+    console.log("Modified Fruits:", fruits);
