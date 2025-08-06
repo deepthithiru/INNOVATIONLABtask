@@ -1,0 +1,31 @@
+// filter() - get numbers > 10
+const numbers = [5, 12, 8, 20, 3, 15];
+const filteredNumbers = numbers.filter(num => num > 10);
+console.log(filteredNumbers);
+
+// reduce() - calculate sum
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
+
+// reduce() - concatenate strings
+const words = ["JavaScript", "is", "fun"];
+const sentence = words.reduce((acc, word) => acc + " " + word);
+console.log(sentence);
+
+// slice() - extract portion
+const fruits = ["apple", "banana", "cherry", "mango", "grape"];
+const slicedFruits = fruits.slice(1, 4);
+console.log(slicedFruits);
+
+// splice() - remove and add elements
+const colors = ["red", "green", "blue", "yellow"];
+colors.splice(1, 2, "purple", "orange");
+console.log(colors);
+
+// spread operator - clone and merge arrays
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const clonedArr = [...arr1];
+const mergedArr = [...arr1, ...arr2];
+console.log(clonedArr);
+console.log(mergedArr);
