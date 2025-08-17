@@ -10,8 +10,8 @@ const person = {
   name: "Deepthi",
   age: 19,
   address: {
-    city: "Coimbatore",
-    pin: 641020
+    city: "Chennai",
+    pin: 600001
   }
 };
 const { name, age, address: { city, pin } } = person;
