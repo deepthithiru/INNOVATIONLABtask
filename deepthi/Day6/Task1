@@ -1,1 +1,37 @@
+const numbers = [10, 20, 30, 40];
+const [a, b, c, d] = numbers;
+console.log(a, b, c, d);
+
+const nestedArr = [1, [2, 3], 4];
+const [x, [y, z], w] = nestedArr;
+console.log(x, y, z, w);
+
+const person = {
+  name: "Deepthi",
+  age: 19,
+  address: {
+    city: "Coimbatore",
+    pin: 641020
+  }
+};
+const { name, age, address: { city, pin } } = person;
+console.log(name, age, city, pin);
+
+console.log(person.name);
+console.log(person.address.city);
+
+console.log(person["age"]);
+console.log(person["address"]["pin"]);
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
+
+Object.keys(person).forEach(key => {
+  console.log(key, person[key]);
+});
+
+for (let [key, value] of Object.entries(person)) {
+  console.log(key, value);
+}
 
