@@ -1,1 +1,19 @@
+const person1 = { name: "Deepthi" };
+const person2 = { name: "Thiru" };
+
+function greet(greeting, place) {
+  console.log(`${greeting}, I am ${this.name} from ${place}`);
+}
+
+greet.call(person1, "Hello", "Chennai");
+greet.call(person2, "Hi", "Madurai");
+
+greet.apply(person1, ["Welcome", "Coimbatore"]);
+greet.apply(person2, ["Hey", "Trichy"]);
+
+const boundGreet = greet.bind(person1, "Good Morning");
+boundGreet("Salem");
+
+const boundGreet2 = greet.bind(person2);
+boundGreet2("Good Evening", "Erode");
 
