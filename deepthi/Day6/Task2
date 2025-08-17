@@ -1,1 +1,30 @@
+const users = [
+  { id: 1, name: "Deepthi", address: { city: "Chennai", pin: 600001 } },
+  { id: 2, name: "Thiru", address: { city: "Madurai", pin: 625001 } },
+  { id: 3, name: "Moorthi", address: { city: "Coimbatore", pin: 641001 } }
+];
+
+console.log(users[0].name);
+console.log(users[1].address.city);
+
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(10, 20, 30, 40));
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2];
+console.log(combined);
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const cloned = { ...obj1, ...obj2 };
+console.log(cloned);
+
+function displayUser({ name, address: { city } }) {
+  console.log(`${name} lives in ${city}`);
+}
+displayUser(users[0]);
+displayUser(users[2]);
 
